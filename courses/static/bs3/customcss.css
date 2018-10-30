@@ -1,0 +1,128 @@
+
+#header {
+    background-color:darkolivegreen;
+    padding:10px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:120%;
+    border-radius:6px;
+}
+
+ul.menu {
+    display:inline-block;
+    position:relative;
+    left:1100px;
+    list-style-type: none;
+}
+
+ul.menu  li a:link a:visited a:hover a:active {
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+
+}
+
+ul.menu a:visited {
+    color:white;
+
+}
+    display:inline-block;
+.menu ul {
+    text-decoration-line: none;
+}
+a.logo {
+    color:white;
+    text-decoration:none;
+}
+
+#content {
+    width:960px;
+    height:600px;
+    margin:auto;
+    padding-left:400px;
+    padding-top:20px;
+    background-color:lemonchiffon;
+}
+input[type='text'], input[type='password']  {
+    margin-top:15px;
+    margin-bottom:10px;
+    background-color:lemonchiffon;
+    color:black;
+    height:20px;
+    width:200px;
+    border:none;
+    border-bottom:3px solid darkolivegreen;
+    display:inline-block;
+
+
+}
+
+
+input[type='text']:focus {
+    background-color:lemonchiffon;
+    color:black;
+    outline:none;
+}
+input[type='password']:focus {
+    background-color:lemonchiffon;
+    color:black;
+    outline:none;
+    
+}
+input[type='submit'] {
+    width:200px;
+    height: 40px;
+    background-color:darkolivegreen;
+    border-radius:6px;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:120%;
+    margin:auto;
+    cursor:pointer;
+}
+label{
+    font-size:120%;
+    font-weight: bolder;
+}
+input[type='text'],select,textarea {
+    display:inline-block;
+}
+
+.course-info h3 {
+    font-size:120%;
+    color:darkolivegreen;
+   
+}
+
+.course-info{
+    padding:20px;
+    padding-bottom:40px;
+    border:3px solid darkolivegreen;
+    width:300px;
+    margin-bottom:30px;
+}
+
+.button { 
+    width: 200px;
+    padding:15px;
+    background-color:darkolivegreen;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    text-transform:uppercase;
+
+}
+.course-info .left{
+    float:left;
+    
+}
+.course-info .right{
+    float:left;
+    margin-left:200px;
+}
+
+.course-info a{
+    text-decoration:none;
+    color:darkolivegreen;
+    text-transform:uppercase;
+}
