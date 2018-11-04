@@ -7,19 +7,19 @@ Create a new course
 {% endif %}
 {% endblock %}
 {% block content %}
-<h1>
+<h1 style="margin-left:350px;">
 {% if object %}
 Edit course "{{ object.title }}"
 {% else %}
 Create a new course
 {% endif %}
 </h1>
-<div class="module">
+<div class="course-module">
 <h2>Course info</h2>
 <form action="." method="post">
         {{ form.as_p }}
         {% csrf_token %}
-        <p><input type="submit" value="Save course"></p>
+        <p ><input type="submit" value="Save course" style="margin-top:20px;"></p>
         </form>
         </div>
 {% endblock %}

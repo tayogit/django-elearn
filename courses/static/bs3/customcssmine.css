@@ -26,7 +26,7 @@ ul.menu a:visited {
     color:white;
 
 }
-
+    display:inline-block;
 .menu ul {
     text-decoration-line: none;
 }
@@ -36,10 +36,10 @@ a.logo {
 }
 
 #content {
-    width:1200px;
+    width:960px;
     height:600px;
-    margin:10px;
-    padding-left:100px;
+    margin:auto;
+    padding-left:400px;
     padding-top:20px;
 
 }
@@ -96,7 +96,7 @@ input[type='text'],select,textarea {
 
 .course-info{
     padding:20px;
-    padding-bottom:60px;
+    padding-bottom:120px;
     border:3px solid darkolivegreen;
     width:400px;
     margin-bottom:30px;
@@ -116,15 +116,7 @@ input[type='text'],select,textarea {
     float:left;
     
 }
-.course-info .module-left{
-    float:left;
-    
-}
 .course-info .right{
-    float:left;
-    margin-left:100px;
-}
-.course-info .content-right{
     float:left;
     margin-left:100px;
 }
@@ -133,12 +125,10 @@ input[type='text'],select,textarea {
     text-decoration:none;
     color:darkolivegreen;
     text-transform:uppercase;
-    margin-bottom:20px;
- 
 }
 
 .module {
-    padding:10px 30px;
+    padding:10px 20px;
     float:left;
     width:600px;
 }
@@ -195,7 +185,6 @@ ul#course-modules li:hover {
     padding:10px 20px;
     float:left;
     width:600px;
-    text-align:center;
 }
 
 .module h3 {
@@ -208,144 +197,5 @@ ul#course-modules li:hover {
     margin:10px 0 20px;
     width:100%;
     float:left;
-}
-
-.contents {
-    width:20%;
-    padding:15px;
-    float:left;
-    background:#333;
-    color: #fff;
-    font-family:'Roboto', sans-serif;
-    margin-right:20px;
-}
-
-.contents ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-.contents ul li {
-    margin:0 0 10px 0;
-    padding:4px 10px 10px;
-    overflow:auto;
-}
-
-.contents ul li.selected {
-    background:#3f3f3f;
-}
-
-.contents ul li:hover {
-    background:#3f3f3f;
-    cursor:move;
-}
-
-.contents ul span {
-    text-transform:uppercase;
-    color:#bbb;
-    font-size:14px;
-}
-
-.contents ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-}
-.contents p a {
-    display:block;
-    color:#4dcc43;
-    text-decoration:none;
-}
-
-.contents ul a:hover {
-    color:#4dcc43;
-}
-
-ul.content-types li {
-    list-style:none;
-    float:left;
-    margin:10px;
-    background:#efefef;
-    padding:8px 40px;
-    margin-top:40px;
-    cursor:pointer;
-    
-    
-}
-
-ul.content-types a li {
-    color:#4dcc43;
-    display:inline-block;
-    cursor:pointer;
-    text-decoration:none;
-    
-    font-size:18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.hidden {
-    display:none;
-}
-
-.course-module  {
-    margin-left:300px;
-    padding:10px;
-    margin-top:10px;
-
-
-}
-.course-module  a.btn{
-    background-color:#4dcc43;
-    color:white;
-    padding:20px;
-    text-decoration:none;
-    text-transform:uppercase;
-    box-shadow:4px 3px 5px lemonchiffon;
-
-}
-
-.module-contents-data p{
-  
-    color:#4dcc43;
-    font-weight: bolder;
-    font-size:130%;
-   
-    width:600px;
-    padding-bottom:15px;
-
-}
-
-
-
-.module-contents-data .a-element a{
-    float:left;
-    margin-right:10px;
-    background-color:darkolivegreen;
-    color:white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding:10px;
-    width:140px;
-    border-radius:6px;
-    margin-left:10px;
-    margin-bottom:2px;
-    text-decoration:none;
-
-    box-shadow:5px 5px 4px lightgrey;
-  
-    
-
-}
-
-.module-contents-data .form-element{
-    
-    float:right;
-    margin-left:200px;
-   
-  
-     box-shadow:5px 5px 4px lightgrey;
-     margin-bottom:40px;
-   
-
 }
 

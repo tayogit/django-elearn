@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from .fields import OrderField
+from django.template.loader import render_to_string
+from django.utils.safestring import mark_safe
 
 class Subject(models.Model):
     title = models.CharField(max_length=200)
@@ -20,6 +22,7 @@ class Course(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     overview = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
+    students = models.ManyToManyField(User,related_name='courses_joined',blank=True)
 
     class Meta:
         ordering = ['-created']
@@ -45,12 +48,13 @@ class Content(models.Model):
     on_delete=models.CASCADE)
 
     content_type = models.ForeignKey(ContentType,
-    on_delete=models.CASCADE,
-    limit_choices_to ={'model__in':(
+     limit_choices_to ={'model__in':(
     'text',
     'video',
     'image',
-    'file')})
+    'file')},
+    on_delete=models.CASCADE,
+   )
     object_id = models.PositiveIntegerField()
     item = GenericForeignKey('content_type', 'object_id')
     order = OrderField(blank=True, for_fields=['module'])
@@ -72,6 +76,8 @@ class ItemBase(models.Model):
 
     def __str__(self):
         return self.title
+    def render(self):
+        return render_to_string('courses/content/{}.html'.format(self._meta.model_name), {'item': self})
         
 class Text(ItemBase):
     content = models.TextField()
